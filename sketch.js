@@ -14,7 +14,7 @@ on('resize', e => {
     c.width = innerWidth;
     c.height = aspect_ratio[1]*innerWidth/aspect_ratio[0];
   } else {
-    c.height = aspect_ratio[0]*innerHeight/aspect_ratio[1];
+    c.width = aspect_ratio[0]*innerHeight/aspect_ratio[1];
     c.height = innerHeight;
   }
 });
